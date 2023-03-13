@@ -3,11 +3,7 @@ services:
   gitlab:
     image: 'gitlab/gitlab-ce:latest'
     restart: always
-    hostname: '192.168.60.144'
-    container_name: gitlab-ce
-    environment:
-      GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://192.168.60.144'
+    container_name: gitlab
     ports:
       - '80:80'
       - '5005:5005'
